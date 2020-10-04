@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro | Desarrollo Frontend con Javascript</title>
+  <link rel="stylesheet" href="./css/styles.css">
+  <script type="module" src="./js/app.js"></script>
+</head>
+<body>
+  
+  <header></header>
+
+  <main>
+    <form id="register_form" novalidate>
+      <div>
+        <p>
+          <label>Usuario</label>
+        </p>
+        <input type="text" id="i_user" required>
+      </div>
+  
+      <div>
+        <p>
+          <label>Email</label>
+        </p>
+        <input type="email" id="i_email" required>
+      </div>
+  
+      <div>
+        <p>
+          <label>Contraseña</label>
+        </p>
+        <input type="password" id="i_pass" required>
+      </div>
+  
+      <div>
+        <p>
+          <label>Confirmar Conraseña</label>
+        </p>
+        <input type="password" id="i_pass2" required>
+      </div>
+  
+      <div>
+        <p>
+          <label>Nombre</label>
+        </p>
+        <input type="text" id="i_name" required>
+      </div>
+  
+      <div>
+        <p>
+          <label>Teléfono Móvil</label>
+        </p>
+        <input type="tel" id="i_phone" required>
+      </div>
+  
+      <div>
+        <p>
+          <label>Género</label>
+        </p>
+        <div id="sex_group">
+          <input type="radio" placeholder="Hombre" id="man" name="sex" value="Hombre" required>
+          <label for="man">Hombre</label>
+          <input type="radio" placeholder="Mujer" id="woman" name="sex" value="Mujer">
+          <label for="woman">Mujer</label>
+          <input type="radio" placeholder="Otro" id="other" name="sex" value="Otro">
+          <label for="other">Otro</label>
+        </div>
+      </div>
+  
+      <div>
+        <p>
+          <label for="nationality">Nacionalidad</label>
+        </p>
+        <select id="nationality" required>
+
+        </select>
+      </div>
+  
+      <div class="nodisplay">
+        <p>
+          <label for="region">Provincia</label>
+        </p>
+        <select id="region">
+        </select>
+      </div>
+  
+      <div>
+        <p>
+          <label>API Key</label>
+        </p>
+        <input type="text" id="i_api_key" required>
+      </div>
+  
+      <div>
+        <p>
+          <label>Comentarios</label>
+        </p>
+        <textarea rows="4" id="ta_comments"></textarea>
+      </div>
+  
+      <div>
+        <input type="checkbox" id="conditions" required>
+        <label for="conditions">Acepto las <strong>Condiciones de uso</strong> y la <strong>Política de privacidad</strong></label>
+      </div>
+  
+      <div id="error_box" class="nodisplay">
+      </div>
+
+      <div>
+        <button type="submit" id="b_register" class="button_primary">Registro</button>
+      </div>
+  
+      <div>
+        <button type="button" id="b_back" class="button_secondary">Volver</button>
+      </div>
+    </form>
+
+  </main>
+
+  <footer></footer>
+
+</body>
+</html>
